@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #222;
+  padding-bottom: 50px;
+}
+
+.coloured-section{
+    background-color: #44c767;
+    color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*Navigation Bar*/
+
+.navbar{
+    padding: 0 0 2rem;
+}
+
+
+.navbar-brand{
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item{
+    padding: 0 18px;
+}
+
+.nav-link{
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: "Montserrat-Light";
+}
+/*Button*/
+
+.myButton {
+    background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+    background-color:#44c767;
+    border-radius:21px;
+    border:1px solid #18ab29;
+    display:inline-block;
+    color:#ffffff;
+    font-family:Georgia;
+    font-size:28px;
+    font-weight:bold;
+    padding:21px 76px;
+    text-decoration: none;
+    text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+    background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+    background-color:#5cbf2a;
+}
+.myButton:active {
+
+    top:1px;
+}
+
+.hero {
+  background-image: url('https://images.pexels.com/photos/450035/pexels-photo-450035.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+
+}
+
+.content h2,
+.content h3 {
+  font-size: 150%;
+  margin: 20px 0;
+}
+
+.content p {
+  color: #555;
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+}
+
+/*Footer*/
+#footer{
+    font-size: 2rem;
+    text-align: center;
+   position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+}
+
+.foot{
+    text-align: center;
+}
+.moh{
+    padding: 3% 2%;
+}

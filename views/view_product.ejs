@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>View Product</title>
+</head>
+<body>
+
+	<a href="/addPro">Upload Products</a>
+	<a href="/logout">Click to Logout</a>
+
+	<h1>Welcome @<strong><%= username %></strong></h1>
+	<h3>These are the products in your store presently</h3>
+
+		
+
+		<table border="1">
+
+			<tr>
+				<th>Product Name</th>
+				<th>Product Description</th>
+				<th>Price</th>
+				<th>Category</th>
+				<th>Added By</th>
+				<th>Date Added</th>
+				<th>Edit</th>
+				<th>Delete</th>
+			</tr>
+
+			<tr>
+				<% result.forEach((recs) => { %>
+
+					<td><%= recs.productName %></td>
+					<td><%= recs.description %></td>
+					<td><%= recs.price %></td>
+					<td><%= recs.category %></td>
+					<td><%= recs.username %></td>
+					<td><%= recs.dateAdded %></td>
+					<td><a href="/edit/<%= recs._id %>">Edit</a></td>
+					<td><a href="/delete/<%= recs._id %>">Delete</a></td>
+
+			</tr>
+
+			<% 	}) %>
+			
+		</table>
+
+</body>
+</html>

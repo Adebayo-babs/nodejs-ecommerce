@@ -1,0 +1,36 @@
+  <%- include('partials/header') -%>
+
+     <h3><a href="/">TCC Mall</a></h3>
+      <p>Shop for your best electronics</p>
+
+      <ul>
+        <li><a href="/products/Computers">Computers</a></li>
+        <li><a href="/products/Phones">Phones</a></li>
+        <li><a href="/products/Tablets">Tablets</a></li>
+        <li><a href="/products/Printers">Printers</a></li>
+        <li><a href="/products/Accessories">Accessories</a></li>
+      </ul> 
+
+      <form action="/search" method="post">
+        <input type="text" name="user" placeholder="Search for a Merchant">
+        <input type="submit" name="" value="Search">
+      </form>
+
+      <hr>
+
+      
+      <% result.forEach((r) => { %>
+            <h1>Merchant: <%= r.username %></h1>
+            <h3>Product Name: <%= r.productName %></h3>
+            <p>Category: <%= r.category %></p>
+            <p>Description: <%= r.price %></p>
+            <p>Price: <%= r.description %></p>
+        
+            <hr>
+
+      <% }) %>
+
+
+       
+
+      <%- include('partials/footer') -%>

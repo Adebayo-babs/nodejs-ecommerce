@@ -1,0 +1,26 @@
+  
+  <%- include('partials/header') -%>
+
+
+      <a href="/">TCC Mall</a><h3></h3>
+      <p>Shop for your best electronics</p>
+
+      <form action="/search" method="post">
+        <input type="text" name="user" placeholder="Search for a Merchant">
+        <input type="submit" name="" value="Search">
+      </form>
+
+      <ul>
+        <li><a href="/products/Computers">Computers</a></li>
+        <li><a href="/products/Phones">Phones</a></li>
+        <li><a href="/products/Tablets">Tablets</a></li>
+        <li><a href="/products/Printers">Printers</a></li>
+        <li><a href="/products/Accessories">Accessories</a></li>
+      </ul>    
+
+      <ul>
+        <li class="myButton"><a href="/login">Merchant Login</a></li>
+        <li class="myButton"><a href="/signup">Merchant Signup</a></li>
+      </ul>
+
+  <%- include('partials/footer') -%>
